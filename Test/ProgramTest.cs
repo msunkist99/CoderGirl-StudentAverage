@@ -44,6 +44,9 @@ namespace Test
                 var result = sw.ToString().Split(Environment.NewLine);
 
                 Assert.Equal("grace Average: 24", result[3]);
+
+                // this test fails with Grace's score of 24 - test should expect a test score of 23
+                //Assert.Equal("grace Average: 23", result[3]);
             }
         }
 
